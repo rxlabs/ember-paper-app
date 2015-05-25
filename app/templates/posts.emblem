@@ -4,5 +4,5 @@ link-to "posts.new" | New post
 
 outlet
 
-ul = each posts
+ul = each model
   li Post title: #{title}
