@@ -28,6 +28,9 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
     ENV.contentSecurityPolicy = {
+      'connect-src': "'self' wss://*.firebaseio.com",
+      'frame-src': "'self' https://*.firebaseio.com",
+      'script-src': "'self' 'unsafe-eval' https://*.firebaseio.com",
       'style-src': "'self' 'unsafe-inline'"
     };
   }
