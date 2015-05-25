@@ -4,7 +4,7 @@ link-to "posts.new" | New post
 
 outlet
 
-= each model
-  h4 #{title}
-  p #{body}
-  button{action "delPost"} Del
+each post in model
+  h4 post.title
+  p post.body
+  button{action "delete"} Del
