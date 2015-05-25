@@ -1,0 +1,8 @@
+{{#each this itemController="post" as |post|}}
+  <p>
+  {{post.model.title}}
+  <button {{action "delete"}}>Del</button>
+  </p>
+{{/each}}
+
+{{outlet}}
