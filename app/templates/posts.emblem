@@ -7,3 +7,4 @@ outlet
 = each model
   h4 #{title}
   p #{body}
+  button{action "delPost"} Del
