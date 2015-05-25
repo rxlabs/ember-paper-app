@@ -1,0 +1,8 @@
+h3 Posts
+
+link-to "posts.new" | New post
+
+outlet
+
+ul = each posts
+  li Post title: #{title}

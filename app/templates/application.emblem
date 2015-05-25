@@ -1,3 +1,5 @@
 h2#title Welcome to Ember.js
 
+link-to "posts" | Posts
+
 outlet
