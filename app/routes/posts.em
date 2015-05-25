@@ -1,4 +1,4 @@
 class PostRoute extends Ember.Route
-  model: -> this.store.find 'post'
+  model: -> @store.find 'post'
 
 `export default PostRoute`
