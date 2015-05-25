@@ -1,3 +1,3 @@
 h4 New Post
 
-button{action "newPost"} New post
+button{action "addPost"} New post
