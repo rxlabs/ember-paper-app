@@ -4,8 +4,9 @@ class PostsNewController extends Ember.Controller
   actions:
     addPost: ->
       newPost = this.store.createRecord 'post',
-        title: 'EmberFire is flaming hot!',
-        body: 'You can store and sync data in realtime without a backend.'
+        title: this.get 'title'
+        body: this.get 'body'
+        timestamp: new Date().getTime()
       newPost.save()
 
 `export default PostsNewController`
