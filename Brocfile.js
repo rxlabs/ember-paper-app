@@ -18,5 +18,7 @@ var app = new EmberApp();
 // along with the exports of each module as its value.
 
 app.import('bower_components/normalize.css/normalize.css');
+app.import('bower_components/webfontloader/webfontloader.js');
+app.import('vendor/head/fonts.coffee');
 
 module.exports = app.toTree();
